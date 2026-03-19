@@ -3,107 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AnchorPoint IT | Local IT Support Toronto</title>
+<title>AnchorPoint IT | Toronto IT Support</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f14;
     color: #ffffff;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
 
+.hero {
+    padding: 80px 20px 60px;
+}
+
 h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-h2 {
-    color: #00c2ff;
+.subtitle {
+    font-size: 20px;
+    color: #9fb3c8;
+    margin-bottom: 15px;
 }
 
-p {
-    line-height: 1.6;
+.location {
+    font-size: 16px;
+    color: #6fa8dc;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
     background: #00c2ff;
     color: #000;
-    padding: 15px 25px;
+    padding: 16px 28px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #00a7db;
 }
 
 .section {
-    margin-top: 60px;
+    margin-top: 80px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00c2ff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
-    background: #1a1a1a;
+    background: #121821;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 1px solid #1f2a36;
+}
+
+.card strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 20px;
+}
+
+.trust div {
+    background: #121821;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #1f2a36;
+    font-size: 14px;
+}
+
+.contact-box {
+    background: #121821;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #1f2a36;
 }
 
 .footer {
     margin-top: 80px;
-    font-size: 14px;
-    opacity: 0.7;
+    font-size: 13px;
+    color: #7a8a99;
+    text-align: center;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="container hero">
+    <h1>AnchorPoint IT</h1>
 
-<h1>AnchorPoint IT</h1>
-<p><strong>Reliable IT Support for Homes & Small Businesses</strong></p>
-<p>Serving Toronto, Mississauga, Etobicoke & North York</p>
+    <div class="subtitle">
+        Fast, Reliable IT Support — We Fix Your Tech Today
+    </div>
 
-<a href="tel:6478745717" class="btn">Call Now: 647-874-5717</a>
+    <div class="location">
+        Serving Toronto, Mississauga, Etobicoke & North York
+    </div>
 
-<div class="section">
-<h2>What We Do</h2>
+    <a href="tel:6478745717" class="btn">
+        Call Now — Get Your Issue Fixed Today
+    </a>
 
-<div class="card">✔ Computer Repairs & Troubleshooting</div>
-<div class="card">✔ Network & WiFi Setup</div>
-<div class="card">✔ Printer & Device Setup</div>
-<div class="card">✔ Virus Removal & System Cleanup</div>
-<div class="card">✔ Business IT Support</div>
-
+    <div class="trust">
+        <div>✔ Local Toronto-Based Support</div>
+        <div>✔ Same-Day Service Available</div>
+        <div>✔ No Fix, No Charge</div>
+        <div>✔ Honest & Professional</div>
+    </div>
 </div>
 
-<div class="section">
-<h2>Why Choose AnchorPoint IT</h2>
+<div class="container section">
+    <h2>What We Do</h2>
 
-<p>We provide fast, honest, and professional IT support with a focus on local clients. Whether it's your home setup or small business systems, we make technology simple and reliable.</p>
+    <div class="grid">
+        <div class="card">
+            <strong>Computer Repairs</strong>
+            Troubleshooting slow systems, crashes, and hardware issues.
+        </div>
 
+        <div class="card">
+            <strong>Network & WiFi Setup</strong>
+            Reliable home and business network installation.
+        </div>
+
+        <div class="card">
+            <strong>Printer & Device Setup</strong>
+            Get everything connected and working properly.
+        </div>
+
+        <div class="card">
+            <strong>Virus Removal</strong>
+            Clean, secure, and optimize your system.
+        </div>
+
+        <div class="card">
+            <strong>Business IT Support</strong>
+            Ongoing support for small business environments.
+        </div>
+    </div>
 </div>
 
-<div class="section">
-<h2>Contact</h2>
+<div class="container section">
+    <h2>Why Choose AnchorPoint IT</h2>
 
-<p><strong>Phone:</strong> 647-874-5717</p>
-<p><strong>Email:</strong> ray@anchorpointit.ca</p>
+    <p>
+        We provide fast, honest, and professional IT support focused on real results. 
+        Whether you're dealing with a broken system, slow network, or setup issues, 
+        we solve problems quickly and get you back up and running without the stress.
+    </p>
+</div>
 
-<a href="tel:6478745717" class="btn">Call Now</a>
+<div class="container section">
+    <h2>Contact</h2>
 
+    <div class="contact-box">
+        <p><strong>Phone:</strong> 647-874-5717</p>
+        <p><strong>Email:</strong> info@anchorpointit.ca</p>
+
+        <a href="tel:6478745717" class="btn">
+            Call Now
+        </a>
+    </div>
 </div>
 
 <div class="footer">
-<p>© 2026 AnchorPoint IT - Local IT Support</p>
-</div>
-
+    © 2026 AnchorPoint IT — Local IT Support Toronto
 </div>
 
 </body>
